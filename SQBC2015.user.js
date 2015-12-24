@@ -13,13 +13,12 @@
 
 var alerts = true; // change to false if you don't want the alerts
 var donateAlerts = true; // change to false if you don't want the annoying tab to open everytime, btw consider donating a card or a cheap skin if you found this script somewhat useful
-var maxTime = 2000; // change to whatever time you would like, 0 make it instant
 
 if ($('span.queue_sub_text').length) {
-    setTimeout(function(){ $J('#next_in_queue_form').submit(); }, maxTime*Math.random());
+    $J('#next_in_queue_form').submit();
 }
 if ($('span.finish_queue_text').length) {
-    setTimeout(function(){ $J('#next_in_queue_form').submit(); }, maxTime*Math.random());
+    $J('#next_in_queue_form').submit();
 }
 if ($('div.discover_queue_empty_refresh_btn').length) {
     if(donateAlerts){
