@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Steam QueueBot Christmas 2015
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Reminds you to check if you have cards to obtain by checking the queue steam arranged for you and auto completes it for you.
 // @author       mig4ng
 // @require      http://code.jquery.com/jquery-latest.js
