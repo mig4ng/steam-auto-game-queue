@@ -25,7 +25,7 @@ The scripts works for Chrome and Firefox, probably it will work on other browser
 
 Donate
 -------------------
-It's Christmas time! Please support me or whoever share awesome scripts and programs for free on the internet!
+It's Christmas time! Please support me or whoever shares awesome scripts and programs for free on the internet!
 
 If you get any duplicate card or just want to donate me some CS:GO skin [here is my trade offer link](https://steamcommunity.com/tradeoffer/new/?partner=107239973&token=OacSUh60)
 
