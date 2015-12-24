@@ -13,6 +13,8 @@
 
 var alerts = true; // change to false if you don't want the alerts
 var donateAlerts = true; // change to false if you don't want the annoying tab to open everytime, btw consider donating a card or a cheap skin if you found this script somewhat useful
+
+// Set both to 0 if you want it to be instant
 var maxTime = 6000; // max time in miliseconds between the load of the page and the button pressing
 var minTime = 500; // min time in miliseconds between the load of the page and the button pressing
 
