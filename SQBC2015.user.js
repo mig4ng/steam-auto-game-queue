@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Steam QueueBot Christmas 2015
 // @namespace    https://github.com/mig4ng/SteamQueueBotChristmas2015
-// @version      0.5
+// @version      0.6
 // @description  Reminds you to check if you have cards to obtain by checking the queue steam arranged for you and auto completes it for you.
 // @author       mig4ng
 // @require      http://code.jquery.com/jquery-latest.js
@@ -23,6 +23,9 @@ if(type=="fast"){
         $( "#instant_queue_btn" ).click(function() {
             GenerateQueue(0);
         });
+    }
+    if ($('span.queue_sub_text').length || $('span.finish_queue_text').length) {
+        $J('#next_in_queue_form').submit();
     }
 } else {
     if ($('span.queue_sub_text').length) {
@@ -46,26 +49,17 @@ if(type=="fast"){
 // Thanks to xPaw for sharing this piece of code https://gist.github.com/xPaw/73f8ae2031b4e528abf7
 var GenerateQueue = function( queueNumber ){
     $J('#instant_queue_btn').html("<span>Queue #" + ++queueNumber + " is running...</span>");
-
-    jQuery.post( 'http://store.steampowered.com/explore/generatenewdiscoveryqueue', { sessionid: g_sessionID, queuetype: 0 } ).done( function( data )
-                                                                                                                                    {
+    jQuery.post( 'http://store.steampowered.com/explore/generatenewdiscoveryqueue', { sessionid: g_sessionID, queuetype: 0 } ).done( function( data ){
         var requests = [];
-
-        for( var i = 0; i < data.queue.length; i++ )
-        {
+        for( var i = 0; i < data.queue.length; i++ ){
             requests.push( jQuery.post( 'http://store.steampowered.com/app/10', { appid_to_clear_from_queue: data.queue[ i ], sessionid: g_sessionID } ) );
         }
-
-        jQuery.when.apply( jQuery, requests ).done( function()
-                                                   {
-            if( queueNumber < 3 )
-            {
+        jQuery.when.apply( jQuery, requests ).done( function(){
+            if( queueNumber < 3 ){
                 GenerateQueue( queueNumber );
-            }
-            else
-            {
+            } else {
                 $J('#instant_queue_btn').html("<span>Queues finished. Come back tomorrow.</span>");
             }
-        } );
-    } );
+        });
+    });
 };
