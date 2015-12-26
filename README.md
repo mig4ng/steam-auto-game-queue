@@ -23,6 +23,13 @@ The scripts works for Chrome and Firefox, probably it will work on other browser
 ----------
 
 
+Screenshot
+-------------------
+![script screenshot](http://i.imgur.com/bDUD4y0.png)
+
+----------
+
+
 Donate
 -------------------
 It's Christmas time! Please support me or whoever shares awesome scripts and programs for free on the internet!
@@ -30,3 +37,5 @@ It's Christmas time! Please support me or whoever shares awesome scripts and pro
 If you get any duplicate card or just want to donate me some CS:GO skin [here is my trade offer link](https://steamcommunity.com/tradeoffer/new/?partner=107239973&token=OacSUh60)
 
 Thank you very much! **Merry Christmas and a Happy New Year!**
+
+----------
