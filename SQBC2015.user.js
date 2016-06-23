@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Steam QueueBot Christmas 2015
-// @namespace    https://github.com/mig4ng/SteamQueueBotChristmas2015
-// @version      0.6
+// @name         SteamAutoGameQueue (Card Bot)
+// @namespace    https://github.com/mig4ng/SteamAutoGameQueue
+// @version      0.7
 // @description  Reminds you to check if you have cards to obtain by checking the queue steam arranged for you and auto completes it for you.
 // @author       mig4ng
 // @require      http://code.jquery.com/jquery-latest.js
@@ -19,7 +19,7 @@ var minTime = 500; // min time in miliseconds between the load of the page and t
 
 if(type=="fast"){
     if ($('div.discover_queue_empty_refresh_btn').length) {
-        $( "<div class='autoQueueBox'><h2>Steam Christmas (2015) Auto Queue</h2><div class='discover_queue_empty winter_sale' style=''><div class='discover_queue_empty_refresh_btn'><span class='btnv6_lightblue_blue btn_medium' id='instant_queue_btn'><span>Complete 3 queues&gt;&gt;</span></span></div><div class='discovery_queue_winter_sale_where_trading_cards'>Did you like the script? <a href='https://steamcommunity.com/tradeoffer/new/?partner=107239973&amp;token=OacSUh60'>Donate me</a> a card you got duplicate or a cheap skin, thanks!</div>" ).insertBefore( ".discovery_queue_apps" );
+        $( "<div class='autoQueueBox'><h2>Steam Auto Queue (Card Bot)</h2><div class='discover_queue_empty winter_sale' style=''><div class='discover_queue_empty_refresh_btn'><span class='btnv6_lightblue_blue btn_medium' id='instant_queue_btn'><span>Complete 3 queues&gt;&gt;</span></span></div><div class='discovery_queue_winter_sale_where_trading_cards'>Did you like the script? <a href='https://steamcommunity.com/tradeoffer/new/?partner=107239973&amp;token=OacSUh60'>Donate me</a> a card you got duplicate or a cheap skin, thanks!</div>" ).insertBefore( ".discovery_queue_apps" );
         $( "#instant_queue_btn" ).click(function() {
             GenerateQueue(0);
         });
@@ -38,7 +38,6 @@ if(type=="fast"){
         if(donateAlerts){
             $( "<h3 class='donateAuthor'>Consider donating a duplicate card that you got or a cheap skin if you found this script somewhat useful!</h3>" ).insertAfter( ".discovery_queue_winter_sale_cards_header" );
             $( "<h3 class='donateTradeOffer'><a href='https://steamcommunity.com/tradeoffer/new/?partner=107239973&token=OacSUh60' target='_blank'>Send me a trade offer, consider it a Christmas Gift :)</a></h3>" ).insertAfter( ".donateAuthor" );
-            $( "<h3 class='donateMerryChristmas'>I wish you, your familly, and your friends a Merry Christmas and a Happy New Year, thanks for using my script.</h3>" ).insertAfter( ".donateTradeOffer" );
         }
         if(alerts){
             alert("If you still have cards for today to obtain by completing the queue click start and the script will complete the queue for you!");
