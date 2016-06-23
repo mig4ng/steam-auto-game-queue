@@ -16,7 +16,7 @@ The scripts works for Chrome and Firefox, probably it will work on other browser
 > **Follow this steps:**
 
 > - Install [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) on Chrome or [Greasemonkey](https://addons.mozilla.org/pt-pt/firefox/addon/greasemonkey/) on Firefox.
-> - Press [Install Script](https://github.com/mig4ng/SteamQueueBotChristmas2015/raw/master/SQBC2015.user.js) or manually install it from [here](https://github.com/mig4ng/SteamQueueBotChristmas2015/blob/master/SQBC2015.user.js).
+> - Press [Install Script](https://github.com/mig4ng/SteamAutoGameQueue/blob/master/SteamAutoGameQueue.user.js) or manually install it from [here](https://github.com/mig4ng/SteamQueueBotChristmas2015/blob/master/SteamAutoGameQueue.user.js).
 > - Go to [store.steampowered.com/explore](http://store.steampowered.com/explore/) and start the queue.
 > 
 
