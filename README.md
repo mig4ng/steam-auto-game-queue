@@ -28,11 +28,3 @@ Screenshot
 ![script screenshot](http://i.imgur.com/bDUD4y0.png)
 
 ----------
-
-
-Donate
--------------------
-
-If you get any duplicate card or just want to donate me some CS:GO skin [here is my trade offer link](https://steamcommunity.com/tradeoffer/new/?partner=107239973&token=OacSUh60)
-
-----------
